@@ -19,10 +19,12 @@
                 if (event.pageY > 200) {
                     alert(event.pageY);
                     $("#discoKillerBunny").offset({
-                        left: event.pageX,
                         top: event.pageY
                     });
-                };     
+                };
+                $("#discoKillerBunny").offset({
+                    top: event.pageX
+                });
             });
         </script>
     </body>
