@@ -16,11 +16,13 @@
         <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
         <script>
             $("html").mousemove(function (event) {
-                $("#discoKillerBunny").offset({
-                    left: event.pageX,
-                    top: event.pageY
-                });
-           });
+                if (event.pageY > 200) {
+                    $("#discoKillerBunny").offset({
+                        left: event.pageX,
+                        top: event.pageY
+                    });
+                };     
+            });
         </script>
     </body>
 </html>
