@@ -17,6 +17,7 @@
         <script>
             $("html").mousemove(function (event) {
                 if (event.pageY > 200) {
+                    alert(event.pageY);
                     $("#discoKillerBunny").offset({
                         left: event.pageX,
                         top: event.pageY
