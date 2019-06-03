@@ -15,11 +15,9 @@
         </main>
         <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
         <script>
-            alert("OMG THE SCRIPT IS RONNING!");
             $("html").mousemove(function (event) {
                 if (event.pageY > 200) {
                     if (event.pageY < 575) {
-                        alert("mouse is in box");
                         $("#discoKillerBunny").offset({top: event.pageY});
                     }
                     else {
