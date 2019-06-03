@@ -16,26 +16,9 @@
         <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
         <script>
             $("html").mousemove(function (event) {
-                if (event.pageY > 200) {
-                    if (event.pageY < 575) {
-                        $("#discoKillerBunny").offset({
-                            top: event.pageY
-                        })
-                    }
-                    else {
-                        $("#discoKillerBunny").offset({
-                            top: "575px"
-                        })
-                    }
-                };
-                else {
-                    $("#discoKillerBunny").offset({
-                        top: "200px"
-                    })
-                };
-                $("#discoKillerBunny").offset({
-                    left: event.pageX
-                });
+                if (event.pageY > 200) {if (event.pageY < 575) {$("#discoKillerBunny").offset({top: event.pageY})}else {$("#discoKillerBunny").offset({top: "575px"})}};
+                else {$("#discoKillerBunny").offset({top: "200px"})};
+                $("#discoKillerBunny").offset({left: event.pageX});
             });
         </script>
     </body>
