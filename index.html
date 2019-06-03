@@ -17,9 +17,11 @@
         <script>
             $("html").mousemove(function (event) {
                 if (event.pageY > 200) {
-                    $("#discoKillerBunny").offset({
-                        top: event.pageY
-                    });
+                    if (event.pageY < 525) {
+                        $("#discoKillerBunny").offset({
+                            top: event.pageY
+                        });
+                    };
                 };
                 $("#discoKillerBunny").offset({
                     left: event.pageX
