@@ -17,11 +17,12 @@
         <script>
             $("html").mousemove(function (event) {
                 if (event.pageY > 200) {
-                    if (event.pageY < 575) {
+                    if (event.pageY < 550) {
                         $("#discoKillerBunny").offset({top: event.pageY});
                     }
                     else {
-                        $("#discoKillerBunny").offset({top: "575px"});
+                        alert("the mouse is low, and the water is wide...");
+                        $("#discoKillerBunny").offset({top: "550px"});
                     }
                 }
                 else {
