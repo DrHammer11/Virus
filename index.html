@@ -21,14 +21,23 @@
                         $("#discoKillerBunny").offset({top: event.pageY});
                     }
                     else {
-                        alert("the mouse is low, and the water is wide...");
-                        $("#discoKillerBunny").offset({top: "550px"});
+                        $("#discoKillerBunny").offset({top: "550"});
                     }
                 }
                 else {
-                    $("#discoKillerBunny").offset({top: "200px"});
+                    $("#discoKillerBunny").offset({top: "200"});
                 }
-                $("#discoKillerBunny").offset({left: event.pageX});
+                if (event.pageX > 925) {
+                    if (event.pageX < 525) {     
+                        $("#discoKillerBunny").offset({left: event.pageX});
+                    }
+                    else {
+                       $("#discoKillerBunny").offset({left: "525"}); 
+                    }
+                }
+                else {
+                    $("#discoKillerBunny").offset({left: "925"});
+                }
             });
         </script>
     </body>
