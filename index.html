@@ -10,33 +10,33 @@
             <DIV style="position:absolute; top:0px; left:550px">
                 <h1>Super Fun Virus Time!!!</h1>
              </DIV>
-                <DIV style="position:absolute; top:200px; left:525px"><img src=IMG_0026.jpeg alt=A super fun disco party!!! width="400" height="400"></DIV> 
+                <DIV style="position:absolute; top:100px; left:425px"><img src=IMG_0026.jpeg alt=A super fun disco party!!! width="600" height="600"></DIV> 
                 <DIV style="position:absolute; top:455px; left:525px"><img id="discoKillerBunny" src=IMG_0040.png alt=A disco killer bunny!!! height="50px" width="50px"></DIV>   
         </main>
         <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
         <script>
             $("html").mousemove(function (event) {
-                if (event.pageY > 200) {
-                    if (event.pageY < 550) {
+                if (event.pageY > 100) {
+                    if (event.pageY < 650) {
                         $("#discoKillerBunny").offset({top: event.pageY});
                     }
                     else {
-                        $("#discoKillerBunny").offset({top: "550"});
+                        $("#discoKillerBunny").offset({top: "650"});
                     }
                 }
                 else {
-                    $("#discoKillerBunny").offset({top: "200"});
+                    $("#discoKillerBunny").offset({top: "100"});
                 }
-                if (event.pageX > 525) {
-                    if (event.pageX < 875) {     
+                if (event.pageX > 425) {
+                    if (event.pageX < 975) {     
                         $("#discoKillerBunny").offset({left: event.pageX});
                     }
                     else {
-                       $("#discoKillerBunny").offset({left: "875"}); 
+                       $("#discoKillerBunny").offset({left: "975"}); 
                     }
                 }
                 else {
-                    $("#discoKillerBunny").offset({left: "525"});
+                    $("#discoKillerBunny").offset({left: "425"});
                 }
             });
         </script>
